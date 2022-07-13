@@ -21,7 +21,7 @@
  *****************************************************************************/
 
 define(
-    ["v4", "./Identifier"],
+    ["uuid", "./Identifier"],
     function (uuid, Identifier) {
 
         /**
@@ -43,7 +43,7 @@ define(
          * @returns {string} a new domain object identifier
          */
         IdentifierProvider.prototype.generate = function (space) {
-            var id = uuid();
+            var id = uuid.v4();
             if (space !== undefined) {
                 id = space + ":" + id;
             }
