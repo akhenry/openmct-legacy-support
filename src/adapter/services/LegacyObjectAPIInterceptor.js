@@ -175,14 +175,12 @@ define([
                 });
         };
 
-        openmct.objects.supersecretSetFallbackProvider(
-            new ObjectServiceProvider(
-                eventEmitter,
-                objectService,
-                instantiate,
-                topic,
-                openmct.$injector
-            )
+        openmct.objects.fallbackProvider = new ObjectServiceProvider(
+            eventEmitter,
+            objectService,
+            instantiate,
+            topic,
+            openmct.$injector
         );
 
         ROOTS.forEach(function (r) {
