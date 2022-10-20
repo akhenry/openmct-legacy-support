@@ -32,7 +32,5 @@ module.exports = {
             "csv": "comma-separated-values",
             "objectUtils": path.join(__dirname, "src/object-utils.js"),
         }
-    },
-
-    devtool: "eval-source-map"
+    }
 }
