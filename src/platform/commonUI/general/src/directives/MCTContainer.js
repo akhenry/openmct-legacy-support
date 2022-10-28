@@ -81,7 +81,7 @@ define(
                     var key = attrs.key,
                         container = containerMap[key];
 
-                    return container ? container.template : "";
+                    return container ? container.template.default : "";
                 }
             };
         }
