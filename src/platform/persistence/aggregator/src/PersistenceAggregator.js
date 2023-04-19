@@ -59,11 +59,10 @@ define(
                 });
             }
 
-            // nope
-            // this.providerMapPromise = $q.all(providers.map(addToMap))
-            //     .then(function () {
-            //         return providerMap;
-            //     });
+            this.providerMapPromise = $q.all(providers.map(addToMap))
+                .then(function () {
+                    return providerMap;
+                });
         }
 
         PersistenceAggregator.prototype.listSpaces = function () {
