@@ -175,18 +175,6 @@ define([
                 });
         };
 
-        openmct.objects.fallbackProvider = new ObjectServiceProvider(
-            eventEmitter,
-            objectService,
-            instantiate,
-            topic,
-            openmct.$injector
-        );
-
-        ROOTS.forEach(function (r) {
-            openmct.objects.addRoot(utils.parseKeyString(r.id));
-        });
-
         return this;
     }
 
